@@ -1,172 +1,183 @@
-🍩 Divino Donuts - E-commerce
+# 🍩 Divino Donuts
 
-Bem-vindo ao repositório oficial do Divino Donuts, um projeto de e-commerce completo construído com PHP. Este sistema foi convertido de uma aplicação estática (HTML, CSS, JS) para uma aplicação web dinâmica e robusta, capaz de gerenciar usuários, produtos, pedidos e um carrinho de compras funcional.
+<p align="left">
+  <img src="img/logo/1.png" alt="Divino Donuts" height="72" />
+</p>
 
-✨ Funcionalidades Principais
+> E-commerce de donuts desenvolvido em PHP com catálogo dinâmico (JSON), autenticação de usuários, carrinho persistente e fluxo completo de checkout.
 
-Sistema de Autenticação de Usuários: Cadastro, login e logout seguros com sessões PHP e hashing de senhas.
-Catálogo de Produtos Dinâmico: Os produtos são carregados a partir de um arquivo JSON, permitindo fácil atualização.
-Filtragem e Busca de Produtos: Funcionalidades de filtragem por categoria e busca por nome implementadas no lado do servidor.
-Carrinho de Compras Persistente: O carrinho de compras é salvo na sessão do usuário, permitindo que ele navegue pelo site sem perder seus itens.
-Gerenciamento de Quantidade: O usuário pode aumentar, diminuir ou remover itens diretamente da página do carrinho.
-Fluxo de Checkout Completo: Desde a seleção de produtos até a página de pagamento e a confirmação final do pedido.
-Histórico de Pedidos: Todos os pedidos finalizados são salvos em um arquivo JSON, criando um registro permanente.
-Design Responsivo: O layout se adapta a diferentes tamanhos de tela, desde desktops até dispositivos móveis.
+![PHP](https://img.shields.io/badge/PHP-8%2B-777BB4?logo=php&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=000)
+![JSON](https://img.shields.io/badge/JSON-000000?logo=json&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-Design-F24E1E?logo=figma&logoColor=white)
 
-🚀 Tecnologias Utilizadas
+---
 
-Backend: PHP
-Frontend: HTML5, CSS3, JavaScript (ES6)
-Prototipagem: Figma
-Logo: Canva 
-Banco de Dados: Arquivos JSON (simulando um banco de dados NoSQL)
-Fontes e Ícones: Google Fonts, Font Awesome
-Auxílio na Codificação: Gemini Pro
-Codificação: Visual Studio Code
+## 📑 Sumário
 
-📁 Arquitetura do Projeto
+- [Demonstração](#demo)
+- [Sobre o Projeto](#sobre)
+- [Tecnologias Utilizadas](#tecnologias)
+- [Instalação e Execução](#instalacao)
+- [Configuração](#config)
+- [Estrutura de Pastas](#estrutura)
+- [Funcionalidades](#funcionalidades)
+- [Testes](#testes)
+- [Melhorias Futuras](#melhorias)
+- [Contribuição](#contribuicao)
+- [Licença](#licenca)
+- [Autor](#autor)
 
-O projeto está organizado na seguinte estrutura de pastas para uma clara separação de responsabilidades:
-divino-donuts/
-│
-├── pages/  
-│   ├── login.php
-│   ├── cadastro.php
-│   ├── home.php
-│   ├── produtos.php
-│   ├── carrinho.php
-│   ├── pagamento.php
-│   ├── acessibilidade.php
-│   ├── usuarios.json         (Banco de dados de usuários)
-│   ├── produtos.json         (Banco de dados de produtos)
-│   ├── pedidos.json          (Histórico de pedidos)
-│
-├── styles/
-│   ├── login.css
-│   └── ... (todas as outras folhas de estilo)
-│
-├── scripts/
-│   ├── login.js
-│   └── ... (todos os outros arquivos JavaScript)
-│
-├── img/
-│   ├── produtos/
-│   ├── icons/
-│   └── ... (todas as imagens)
-│
-│
-└── README.md             (Esta documentação)
+---
 
-🛠️ Instalação e Execução
+<a id="demo"></a>
+## :rocket: Demonstração
 
-Para executar este projeto em sua máquina local, siga os passos abaixo:
-Pré-requisitos: Certifique-se de ter um ambiente de servidor local instalado, como XAMPP, WAMP ou MAMP.
-Clone o Repositório:
-Bash
+- Local (exemplo): http://localhost/Divino_Donuts/pages/home.php
+- Preview do protótipo:
+
+### Desktop
+
+![Protótipo Desktop](protótipo/Pc.png)
+
+### Mobile
+
+![Protótipo Mobile](protótipo/Mobile.png)
+
+### Assets
+
+![Protótipo Assets](protótipo/Assets.png)
+
+### Screenshots do sistema
+
+<p align="left">
+  <img src="img/banners/home.png" alt="Tela Home" width="32%" />
+  <img src="img/banners/login.png" alt="Tela Login" width="32%" />
+  <img src="img/banners/cadastro.png" alt="Tela Cadastro" width="32%" />
+</p>
+
+---
+
+<a id="sobre"></a>
+## 📖 Sobre o Projeto
+
+O Divino Donuts é um e-commerce com páginas dinâmicas em PHP, convertido de uma base estática (HTML/CSS/JS) para um fluxo completo de navegação e compra. O objetivo é demonstrar uma aplicação web funcional com autenticação, catálogo, carrinho e finalização de pedido, utilizando arquivos JSON como persistência.
+
+---
+
+<a id="tecnologias"></a>
+## 🛠️ Tecnologias Utilizadas
+
+- PHP
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- JSON (persistência de dados)
+- Font Awesome e Google Fonts
+- Figma (prototipagem) e Canva (logo)
+
+---
+
+<a id="instalacao"></a>
+## ⚙️ Instalação e Execução
+
+Pré-requisitos: ambiente de servidor local (XAMPP, WAMP ou MAMP).
+
+```bash
+# Clone o repositório
 git clone https://github.com/helen2411/Divino_Donuts.git
+```
 
+- Copie a pasta do projeto para o diretório do servidor (ex.: htdocs no XAMPP)
+- Inicie o Apache
+- Abra:
+  - http://localhost/Divino_Donuts/pages/home.php
 
-Mova os Arquivos: Copie a pasta do projeto para o diretório do seu servidor web (geralmente htdocs no XAMPP ou www no WAMP/MAMP).
-Inicie o Servidor: Abra o painel de controle do seu ambiente (ex: XAMPP Control Panel) e inicie os serviços Apache.
-Acesse no Navegador: Abra seu navegador e acesse a página inicial do projeto, geralmente através de um dos seguintes links:
-http://localhost/divino-donuts/
-http://localhost/divino-donuts/paginas/home.php (dependendo de onde você colocou os arquivos).
+---
 
-📄 Descrição das Páginas e Scripts
+<a id="config"></a>
+## 🔑 Configuração
 
-🍩 Página de Login (login.php)
+- Este projeto não usa arquivo `.env`
+- Para cadastro e pedidos funcionarem corretamente, os arquivos JSON em `pages/` precisam estar com permissão de escrita:
+  - `pages/usuario.json`
+  - `pages/pedidos.json`
 
-Esta é a porta de entrada para usuários registrados.
-Propósito: Autenticar um usuário.
-Funcionalidades:
-Verifica se um usuário já está logado e o redireciona.
-Processa o formulário de login via POST.
-Valida as credenciais comparando o e-mail e a senha (usando password_verify) com os dados de usuarios.json.
-Inicia a sessão ($_SESSION) em caso de sucesso e redireciona para a home.php.
-Exibe mensagens de erro em caso de falha.
+---
 
-🍓 Página de Cadastro (cadastro.php)
+<a id="estrutura"></a>
+## 📂 Estrutura de Pastas
 
-Permite que novos clientes criem uma conta.
-Propósito: Registrar um novo usuário.
-Funcionalidades:
-Processa o formulário de cadastro via POST.
-Valida os dados (campos vazios, formato de e-mail).
-Verifica se o e-mail já existe em usuarios.json.
-Criptografa a senha com password_hash.
-Salva o novo usuário no arquivo usuarios.json.
-Exibe mensagens de sucesso ou erro.
+```bash
+Divino_Donuts/
+ ├── pages/
+ ├── scripts/
+ ├── styles/
+ ├── img/
+ ├── protótipo/
+ ├── LICENSE
+ └── README.md
+```
 
-☕ Página Home (home.php)
+---
 
-A página principal e vitrine do site.
-Propósito: Apresentar a loja e servir como ponto central de navegação.
-Funcionalidades:
-Possui um menu de navegação dinâmico:
-Para visitantes, exibe links de "Login" e "Cadastro".
-Para usuários logados, exibe uma mensagem de boas-vindas ("Olá, [Nome]!") e os links "Minha Conta" e "Sair".
-Apresenta as categorias de produtos.
+<a id="funcionalidades"></a>
+## 📌 Funcionalidades
 
-🛍️ Página de Produtos (produtos.php)
+- Autenticação de usuários (cadastro, login, logout) com sessão e hashing de senha
+- Catálogo dinâmico de produtos via JSON
+- Filtro e busca por categoria/nome
+- Carrinho persistente via sessão (adicionar, remover, alterar quantidade)
+- Checkout com pagamento e confirmação do pedido
+- Histórico de pedidos salvo em JSON
+- Layout responsivo e página de acessibilidade
 
-O catálogo completo de produtos da Divino Donuts.
-Propósito: Exibir todos os produtos disponíveis para compra.
-Funcionalidades:
-Carrega a lista de produtos do arquivo produtos.json.
-Gera a grade de produtos dinamicamente com um loop foreach do PHP.
-Permite a filtragem por categoria e busca por nome via servidor (parâmetros na URL).
-Cada produto possui um botão "Adicionar ao Carrinho" que envia os dados para carrinho_acoes.php.
+---
 
-🛒 Página do Carrinho (carrinho.php)
+<a id="testes"></a>
+## 🧪 Testes
 
-Onde o usuário revisa os itens selecionados.
-Propósito: Exibir e gerenciar os itens do carrinho de compras.
-Funcionalidades:
-Lê os dados do carrinho armazenados em $_SESSION['carrinho'].
-Busca os detalhes completos de cada produto em produtos.json.
-Exibe a lista de itens, com nome, imagem, preço unitário, quantidade e preço total por item.
-Permite aumentar, diminuir ou remover itens através de formulários que se comunicam com carrinho_acoes.php.
-Calcula e exibe o subtotal, a taxa de entrega e o valor total do pedido, tudo no lado do servidor.
+Este projeto ainda não possui suíte de testes automatizados. A validação é feita por testes manuais do fluxo:
 
-💳 Fluxo de Pagamento (pagamento.php)
+- Cadastro → Login → Produtos → Carrinho → Pagamento → Confirmação
 
-A etapa final da compra.
-Propósito: Permitir que o usuário revise o pedido e "finalize" a compra.
-Funcionalidades:
-Protegida contra acesso direto (redireciona se o carrinho estiver vazio).
-Exibe um resumo final do pedido com todos os itens e o valor total.
-Apresenta um formulário para seleção da forma de pagamento.
-Ao submeter, envia os dados para finalizar_pedido.php.
+---
 
-♿ Página de Acessibilidade (acessibilidade.php)
+<a id="melhorias"></a>
+## 📈 Melhorias Futuras
 
-Painel de controle para ferramentas de acessibilidade.
-Propósito: Oferecer opções para melhorar a experiência de usuários com diferentes necessidades.
-Funcionalidades:
-Apresenta um menu de opções (Libras, controle de fonte, modo escuro, etc.).
-A lógica de ativação dessas ferramentas é controlada pelo JavaScript (acessibilidade.js), pois precisa manipular a página em tempo real no navegador.
-O PHP é usado apenas para integrar a página ao restante do site, com o menu de navegação dinâmico.
+- Migrar JSON para um banco SQL (MySQL/MariaDB)
+- Criar página “Minha conta” com histórico e dados do usuário
+- Implementar painel administrativo para produtos
+- Integrar gateway de pagamento (Mercado Pago/PagSeguro/Stripe)
 
-⚙️ Scripts de Lógica (Helpers)
+---
 
-carrinho_acoes.php: Um script que não exibe HTML. Ele é o "motor" do carrinho, responsável por receber as ações (adicionar, aumentar, diminuir, remover) e atualizar os dados na $_SESSION['carrinho'].
+<a id="contribuicao"></a>
+## 🤝 Contribuição
 
-finalizar_pedido.php: Outro script de lógica. Ele é acionado pela página de pagamento para:
-Validar e processar o pedido.
-Salvar os detalhes da compra em pedidos.json.
-Limpar o carrinho da sessão.
-Redirecionar o usuário para a página de confirmação.
+```bash
+git checkout -b minha-feature
+git commit -m "feat: minha nova feature"
+git push origin minha-feature
+```
 
-logout.php: Script simples que destrói a sessão do usuário e o redireciona para a página de login.
+---
 
-confirmacao_pedido.php: A página final do fluxo de compra, que exibe os detalhes do pedido recém-criado para o cliente.
+<a id="licenca"></a>
+## 📄 Licença
 
-🔮 Próximos Passos e Melhorias
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-Este projeto é uma base sólida. Para levá-lo ao próximo nível, devo considerar:
+---
 
-Migração para Banco de Dados SQL: Substituir os arquivos JSON por um banco de dados relacional como MySQL ou MariaDB para melhor performance e escalabilidade.
-Página "Minha Conta": Desenvolver a página onde usuários logados podem ver seu histórico de pedidos e gerenciar seus dados cadastrais.
-Painel Administrativo: Criar uma área restrita para o administrador do site poder adicionar/editar produtos sem precisar alterar o arquivo JSON manualmente.
-Integração com Gateway de Pagamento: Estudar a API de serviços como Mercado Pago, PagSeguro ou Stripe para processar pagamentos reais.
+<a id="autor"></a>
+## 👨‍💻 Autor
+
+Feito por Helen.
+
+- GitHub: https://github.com/helen2411
+- LinkedIn: https://linkedin.com/in/seu-perfil
 
